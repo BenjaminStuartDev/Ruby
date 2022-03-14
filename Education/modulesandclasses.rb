@@ -13,7 +13,7 @@ def stir
   puts 'Stir Coffee'
 end
 
-# Method that returns a user input for numb of sugars.
+# Method that *returns* a user input for numb of sugars.
 def get_sugars
   puts 'How many sugars?'
   gets.chomp.to_i
@@ -31,20 +31,15 @@ def print_heading(dish_name)
   puts '_' * 20
 end
 
-def cook_pasta
-  print_heading('pasta')
+# pass in an ingredients array and iterate over the array adding each ingredient.
+def cook(food_name:, cook_time:, ingredients: {}) # ingredients is optional
+  print_heading(food_name.capitalize)
   boil_water
-  puts 'Add salt'
-  puts 'Add pasta'
-  puts 'Cook for 5 mins'
+  ingredients.each do |item, qty|
+    puts "Add #{qty} of #{item}"
+  end
+  puts "Cook for #{cook_time} mins"
 end
 
-def cook_rice
-  print_heading('rice')
-  boil_water
-  puts 'Add rice'
-  puts 'Cook for 10 mins'
-end
-
-cook_pasta
-cook_rice
+cook(food_name: 'rice', cook_time: 5, ingredients: { 'rice' => '2 cups' })
+# cook('pasta', 15, { 'salt' => '10g', 'pasta' => '250g' })
