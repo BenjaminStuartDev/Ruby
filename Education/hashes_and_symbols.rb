@@ -30,7 +30,9 @@ def full_family
     immediate_family += family[key]
   end
   # Part 2: Make changes to family here
-
+  index = family[:aunts].find_index { |name| name == 'Jill' }
+  family[:aunts].delete_at(index)
+  family[:uncles] << 'jacob'
   # Don't change the code below
   [family, immediate_family]
 end
