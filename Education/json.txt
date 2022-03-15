@@ -10,4 +10,5 @@ The default array of hashes are ugly with our keys being symbols, we can use the
 Re-writing
 data = JSON.load_file('file.json', sybolize_names: true)
 p data[0][:name] => same output, but using symbols instead of strings
-
+Parsing is taking raw json data (in the file) and converting it to an array/array of hashes
+Generating is taking 

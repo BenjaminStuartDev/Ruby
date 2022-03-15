@@ -4,3 +4,5 @@ need to require the csv module for ruby
 `require 'csv'`
 Now we can use the CSV#methods
 data = CSV.read('people.csv')
+the data is an "enumerable", which means that it has access to the enumerable methods (like an array)
+data.each {|row| }

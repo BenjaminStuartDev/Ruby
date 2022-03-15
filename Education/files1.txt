@@ -15,3 +15,21 @@ File.open has different "options"
 "a" => append (add to the end)
 "w" => write (overwrites previous contents)
 https://ruby-doc.org/core-3.1.1/IO.html#method-c-new
+
+Basic Text Files:
+    https://ruby-doc.org/core-3.1.1/File.html
+Simple run through: https://www.rubyguides.com/2015/05/working-with-files-ruby/
+Files need to be "opened" before they can be read/writen
+file = File.open('local-file.txt')
+p file.read => "blah blah blah"
+
+Methods like File.foreach will automatically open before reading 
+File.foreach('shopping_list.txt') do |line|
+    puts line.strip
+end
+
+File.open has different "options"
+"r" => read-only (default behaviour)
+"a" => append (add to the end)
+"w" => write (overwrites previous contents)
+https://ruby-doc.org/core-3.1.1/IO.html#method-c-new
