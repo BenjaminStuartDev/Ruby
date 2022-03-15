@@ -1,0 +1,32 @@
+The count_letters method (more on methods here - we will be covering this in class soon!) takes a string as an argument, and will return the count of each letter as a hash. 
+
+E.g. count_letters("hello") should return {"h"=>1, "e"=>1, "l"=>2, o=>1}
+
+E.g. count_letters("Thats The Ticket") should return {"T"=>3, "h"=>2, "a"=>1, "t"=>2, "s"=>1, "e"=>2, "i"=>1, "c"=>1, "k"=>1}
+
+E.g. count_letters("") should return {}
+
+We have written some test cases for this exercise. Click the "Mark" button to check your solution.
+--------------------------------------------------
+Bookkeeping with Hashes
+The book_keeper method returns an array of books, each book represented by a hash. 
+
+Add code to the book_keeper method that will do the following.
+
+Populate the array with 3 books. Each book will be represented as a hash with keys title, author, and year (that the book was published).
+
+Loop through this array, printing to screen the value of each member of the array. Format the output so that each book looks like this: Harry Potter by J.K. Rowling (1997)
+
+
+-------------_-----------------------------------------
+
+Square Numbers of an Array
+The square_numbers_of_an_array method takes an array of numbers as an argument. 
+
+Write code inside of the method that will square each of these numbers, and return an array with the square for each number.
+
+E.g. square_numbers_of_an_array([1, 2, 3, 4, 5]) should return [1, 4, 9, 16, 25]
+
+E.g. square_numbers_of_an_array([9]) should return [81]
+
+E.g. square_numbers_of_an_array([]) should return []

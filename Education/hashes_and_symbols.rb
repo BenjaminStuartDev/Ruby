@@ -29,6 +29,7 @@ def full_family
   immediates.each do |key|
     immediate_family += family[key]
   end
+
   # Part 2: Make changes to family here
   index = family[:aunts].find_index { |name| name == 'Jill' }
   family[:aunts].delete_at(index)
