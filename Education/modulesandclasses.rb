@@ -1,3 +1,5 @@
+#frozen_string_literal true
+
 # Lesson 1 Week 5
 
 # Method to add sugar
@@ -41,5 +43,22 @@ def cook(food_name:, cook_time:, ingredients: {}) # ingredients is optional
   puts "Cook for #{cook_time} mins"
 end
 
-cook(food_name: 'rice', cook_time: 5, ingredients: { 'rice' => '2 cups' })
+# cook(food_name: 'rice', cook_time: 5, ingredients: { 'rice' => '2 cups' })
 # cook('pasta', 15, { 'salt' => '10g', 'pasta' => '250g' })
+
+arr = [1, 2, 3, 4, 5]
+
+
+def ca_each(arr)
+  index = 0
+  while index < arr.length
+      yield(arr[index])
+      # puts arr[index] ** 2
+      index += 1
+  end
+end
+
+ca_each(arr) do |item|
+  puts item ** 2
+end
+
