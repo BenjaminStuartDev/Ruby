@@ -1,0 +1,6 @@
+CSV: (comma separated values, excel spreadsheet)
+https://ruby-doc.org/stdlib-3.1.1/libdoc/csv/rdoc/index.html
+need to require the csv module for ruby
+`require 'csv'`
+Now we can use the CSV#methods
+data = CSV.read('people.csv')

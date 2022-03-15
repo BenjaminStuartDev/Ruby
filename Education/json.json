@@ -1,0 +1,19 @@
+[
+    {
+        "author": "Isaac Asimov",
+        "year_born": 1920,
+        "books": [
+            "Fantastic Voyage",
+            "The Robots of Dawn",
+            "I, Robot"
+        ]
+    },
+    {
+        "author": "J.R.R. Tolkien",
+        "year_born": 1892,
+        "books": [
+            "The Hobbit",
+            "The Lord of the Rings"
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+JSON: (JavaScript Object Notation)
+https://ruby-doc.org/stdlib-3.1.1/libdoc/json/rdoc/JSON.html
+need to require the json module for ruby
+`require 'json'`
+Now we can use the JSON#methods
+data = JSON.parse(File.read('file.json'))
+p data => gives us an array of hashes
+p data[0]["name"] => outputs a hash
+The default array of hashes are ugly with our keys being symbols, we can use the built ins to pretty it up
+Re-writing
+data = JSON.load_file('file.json', sybolize_names: true)
+p data[0][:name] => same output, but using symbols instead of strings
+
