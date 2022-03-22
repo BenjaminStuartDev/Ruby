@@ -44,3 +44,4 @@ def facebook_likes(likers)
         puts "#{likers[-1]}, #{likers[-2]} and #{likers.length - 2}otheres likes this"
     end
 end
+

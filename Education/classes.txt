@@ -1,0 +1,14 @@
+Classes Keywords
+blueprint: the class definitition, eg `class Person`
+instance: each "version" of a new person 
+eg glen = new Person, matt = new Person 
+instance variable: an attribute that is is unique to each instance 
+eg person1's @name is different to person2's @name
+attr_reader, attr_writer, attr_accessor: how we can read and write these attributes eg
+attr_reader :name
+attr_writer :awesome 
+p person.name => "glen"
+person.awesome = true
+class variable: an attribute that is shared between all instances of the class. Usually an "all" variable that holds all instances of that model
+defined as @@variable_name
+ 

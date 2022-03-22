@@ -1,0 +1,20 @@
+Exceptions:
+    https://ruby-doc.org/core-2.7.0/Exception.html
+    By default, program stops and exits out when an exception occurs
+    Terminal outputs the exception, the line it happened on, and a trace of what led to that line being run
+    
+    Exceptions always happen, we don't want our program to crash. We want to handle that exception gracefully  then continue the rest of our program
+    
+Exception Handling:
+Ruby uses begin/rescue
+```
+begin
+# thrown exception
+rescue SomeException=> e
+# us handling this specific exception
+rescue ADifferentException => e
+# us handling this other specific exception
+else 
+# us handling everything else
+end
+```

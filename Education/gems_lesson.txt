@@ -1,0 +1,30 @@
+Gems:
+all available gems found here: https://rubygems.org/
+gems need to be required in a file that uses their methods
+`require 'rainbow'`
+even though a gem is "required" it needs to be installed locally
+`gem install rainbow`
+always always always read the github repo for each gem you use
+commonly used gems for the terminal app - https://ttytoolkit.org/
+use bundler for projects
+    
+Gem Bundler: https://bundler.io/bundle_help.html
+Instead of installing gems globally, we should instead use the bundler gem to have a "project relative" list of gems that our project uses
+This list travels with our program, and others that clone our repo has access to these gems and can automatically install in one command
+Use bundler for your project instead of relying on a user manually installing each and every one of your gems
+Install bundler once and only once
+steps:
+bundle init
+bundle add gem-name
+as the developer we run `bundle add gemname` then after we push our repo online a user can just run
+`bundle install`
+and that will automatically install all gems that are in the bundle(gemfile)
+
+to clarify:
+as the developer we run `bundle add gemname`
+then after we push our repo online a user can just run
+
+`bundle install`
+
+and that will automatically install all gems that are in the bundle(gemfile)
+    

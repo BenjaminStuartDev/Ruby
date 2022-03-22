@@ -1,0 +1,11 @@
+Demonstrate your algorithmic thinking through completing the following two tasks, in order:
+ 1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+ 2. Write pseudocode for the process outlined in your flowchart
+
+ 1. Create an array containing all integers between and including 2 and 100. 
+ 2. print out "Primes in order are: \n"
+ 3. Create a variable i to store which prime the program is currently up to and give it the value 1.
+ 4. Repeat steps 5 - 7 while there are elements in the array.
+ 5. print out the current prime you are up to ('i') and the first element in the array (this is the current prime).
+ 6. loop through the array and remove all elements that are divisible by the first element in the array.
+ 7. Increment i by 1.
