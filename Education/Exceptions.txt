@@ -14,7 +14,9 @@ rescue SomeException=> e
 # us handling this specific exception
 rescue ADifferentException => e
 # us handling this other specific exception
-else 
+rescue
 # us handling everything else
 end
 ```
+
+To force our application to experience an exception (for example a custom made exception we've created) then we use the `raise` keyword

@@ -1,0 +1,8 @@
+Testing:
+Necessary evil, the whole point is instead of manually testing everything each time we change something. 
+
+We run these tests instead, when they all pass we haven't broken anything.
+
+We'll be using rspec to write our unit tests
+https://rspec.info/
+
