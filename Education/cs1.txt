@@ -1,0 +1,93 @@
+Index: 
+    Binary
+    Base Counting
+    Knowing the next place value
+    Converting from decimal to binary - subtraction
+    Converting from decimal to binary - division
+    Hexadecimal
+    
+Binary
+Binary, base2, ones and zeros
+Symbolized by 0b, expect to see numbers like
+0b1010 is 1010 base 2
+
+Base Counting
+When counting, the "base" is the largest possible set of units before increasing our next column. Each column is the next exponent.
+
+Decimal/base 10 -> 
+the number 9 is:
+    -> 9 sets of 1s
+    
+Adding 1, gives us 10:
+    1 ->  1 set of 10s
+    0 -> 0 set of 1s
+    
+Regardless of the base, the concept is the same
+
+Base7 -> 1,2,3,4,5,6....next number is 10
+10 -> 1 set of 7s, 0 set of 1s
+
+Base 2 -> 1...next number isn't 2, its 10. next number (3) is 11, next number (4) is 100
+    1 -> 1 set of 1s
+  10 -> 1 set of 2, 0 set of 1
+  11 -> 1 set of 2, 1 set of 1
+100 -> 1 set of 4, 0 set of 2, 0 set of 1
+
+Knowing the next place value
+How do we know the "value" of each column? Each column's value is the base to the power of its position away from the right most column. Usually this means we work from the right to left
+
+Base10 number 2468
+8 => 10 to the power of 0 => 1 => 8*1 => 8
+6 => 10 to the power of 1 => 10 => 6*10  => 60
+4 => 10 to the power of 2 => 100 => 4 * 100 => 400
+2 => 10 to the power of 3 => 1000 => 2 * 1000 => 2000
+
+Add each of the numbers and we get 2000+400+60+8 => 2468
+
+The same principle applies for any base.
+
+Base7 number 2461
+1 => 7 to the power of 0 => 1 => 1*1 => 1
+6 => 7 to the power of 1 => 7 => 6*7  => 60
+4 => 7 to the power of 2 => 49=> 4*49 => 400
+2 => 7 to the power of 3 => 343 => 2*343 => 686
+
+Add each of the numbers and we get 686+400+60+1 => 1147 
+
+Converting from decimal to binary - subtraction
+Two methods:
+    First is using subtraction
+    15 Base10 
+    What is the largest power of 2 that goes into our current number (15) 
+    2^3 => 8
+    15 - 8 => 7 left
+    What is the largest power of 2 that goes into our current number (7)
+    2^2 => 4
+    7 - 4 => 3 left
+    What is the largest power of 2 that goes into our current number (3)
+    2^1 => 2
+    3 - 2 => 1 left
+    
+    Once we have a number that is smaller than our desired base (2), we stop and take our powers that we used.
+    2^3, 2^2, 2^1, 2^0
+      1       1      1      1
+      
+      15 Base 10 converted to binary is 1111   
+    
+Same concept with a larger number
+
+123,456 Base 10 to binary
+    What is the largest power of 2 that goes into our current number (123,456) 
+    2^16 => 65,536
+    123,456 - 65,536 => 57,920 left
+    
+What is the largest power of 2 that goes into our current number (57,920) 
+2^15 => 32,768
+57,920 - 32,768 => 25,152
+
+Continue this process to the end....and you eventually have 11110001001000000
+    Each 1 is the power of 2 that was used to subtract from the previous number, and a 0 means it wasn't used.
+    
+Converting from decimal to binary - division
+    Slide 9 for division
+https://docs.google.com/presentation/d/1TLcH-LSqewrPunOzluFYxy7YkNQbUsX9sSwNdnUG_Yk/edit?usp=sharing

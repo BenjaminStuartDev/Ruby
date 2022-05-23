@@ -1,0 +1,26 @@
+Agile Development:
+Small, incremental successes over one big development cycle
+Including and accepting of changes in product requirements
+Smaller development cycles mean more agile responses to what is working and what needs to change
+
+User Stories:
+As a [user type], I want to [do something] so that I can [benefit]
+
+Example,
+As a new user, I want to sign up so that I can be part of a community
+
+As an admin, I want to be able to delete negative posts so that I can have a friendly environment
+
+As a user, I want to be able to edit my own comments, so that I can fix any mistakes that I've made
+
+
+Using Trello:
+https://trello.com/
+Our boards: To Do/Doing/Testing/Done
+ACTUALLY USE IT
+
+Lists broken down into a number of cards, these cards are labled, prioritized, broken down into smaller tasks, and assigned to who is working on it (when in a group)
+
+So to be as agile as possible while working on our projects, we should focus on drafting our user stories, putting our tasks into a trello board and working on small incremental successes, then regularly updating what tasks we work on?
+
+Its not really agile if we just ignore our kanban board and do it all after the end of our dev cycle?
